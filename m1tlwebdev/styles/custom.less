@@ -52,6 +52,7 @@ CHA BRAH. MY. CUSTOM .LESS
     font-family: Raleway;
     padding-top:.5em;
     padding-left: .5em;
+    display: inline-block;
 }
 
 @media only screen and (max-width:320px) {
@@ -64,23 +65,12 @@ CHA BRAH. MY. CUSTOM .LESS
 	}
 }
 
-.parallax-item[data-url-id='what-is-a-tl'] {
-  .content-inner {
-    background: none;
-  }
-  .content {
-    background-image: url('http://i65.tinypic.com/2qvaw45.jpg') !important;
-    background-repeat: no-repeat;
-    background-position: center !important;
-    background-size: cover;
-  }
-}
 .parallax-item[data-url-id='what-extra'] {
   .content-inner {
     background: none;
   }
   .content {
-    background-image: url('http://i63.tinypic.com/24yxtth.jpg') !important;
+    background-image: url('http://i67.tinypic.com/2193pye.jpg') !important;
     background-repeat: no-repeat;
     background-position: center !important;
     background-size: cover;
@@ -94,7 +84,7 @@ http://i65.tinypic.com/2qvaw45.jpg
     background: none;
   }
   .content {
-    background-image: url('http://i64.tinypic.com/2e3d3xh.jpg') !important;
+    background-image: url('http://i65.tinypic.com/eamfcz.png') !important;
     background-repeat: no-repeat;
     background-position: center !important;
     background-size: cover;
@@ -108,7 +98,7 @@ http://i64.tinypic.com/2a5lngn.jpg
     background: none;
   }
   .content {
-    background-image: url('http://i68.tinypic.com/123mcmh.jpg') !important;
+    background-image: url('http://i63.tinypic.com/2hr00w8.png') !important;
     background-repeat: no-repeat;
     background-position: center !important;
     background-size: cover;
@@ -119,7 +109,7 @@ http://i64.tinypic.com/2a5lngn.jpg
     background: none;
   }
   .content {
-    background-image: url('http://i63.tinypic.com/24yxtth.jpg') !important;
+    background-image: url('http://i67.tinypic.com/2193pye.jpg') !important;
     background-repeat: no-repeat;
     background-position: center !important;
     background-size: cover;
@@ -199,6 +189,31 @@ h1.page-title {
 }
 
 /*WHAT IS A TL PAGE STYLING*/
+.what-page-padding {
+    padding: 2em 4em !important;
+}
+@media only screen and (max-width: 400px) {
+	.what-page-padding {
+		padding: 0em 1em 1em 1em !important;
+	}
+}
+
+
+div#block-yui_3_17_2_2_1447887414544_26400 {
+    padding-top: 0px !important;
+}
+@media only screen and (max-width) {
+
+}
+
+.what-bullets-outer {
+	text-align: center
+}
+.underline {
+	border-bottom:2px solid white;
+	opacity: 1 !important
+}
+
 .img-opacity {
 	opacity:1 !important
 }
@@ -214,6 +229,15 @@ h1.page-title {
 .its-a-formatted {
 	margin-top: 0px;
 	margin-bottom: 0px;
+	color:white;
+	font-size: 1.5em;
+	display: inline-block;
+	margin-left:20px
+}
+@media only screen and (max-width:1174px) {
+	.its-a-formatted {
+		margin-left:39px
+	}
 }
 .its-a-formatted-bottom {
 	margin-top: 20px;
@@ -309,14 +333,23 @@ h1.page-title {
 	display:inline-block;
 }
 .what-button {
-	opacity: .7;
+	opacity: 1;
 	width: 13.5em;
     padding-left: .5em;
     padding-right: .5em;
 	&:hover {
-		opacity: 1;
+		opacity: .7;
 	}
 }
+
+.what-buttons-link {
+	color: #d3d1d1 !important;
+	text-decoration: underline !important;
+	&:hover {
+		opacity: .7
+	}
+}
+
 .chalk-buttons-div {
     text-align: center;
 }
@@ -330,7 +363,36 @@ h1.page-title {
 .people-text-div, .one-awesome-host-text-div, .twelve-min-cs-text-div, .twelve-min-per-text-div, .topics-text-div, .five-agreements-text-div {
 	color:white;
 	padding-top: 11px !important;
-	line-height: 1.5em
+	line-height: 1.5em;
+}
+.five-agreements-div, .one-awesome-host-div, .twelve-min-per-div, .topics-div, .people-div, .twelve-min-cs-div {
+    padding: 1px 10px;
+    border-radius: 3px;
+    background-color: rgba(240, 255, 255, 0.13);
+    color: white;
+    text-align: justify;
+    font-size: 17px;
+}
+
+.five-agreements-para, .one-awesome-host-para, .twelve-min-per-para, .topics-para, .people-para, .twelve-min-cs-para {
+    margin: 2% 4%;
+}
+
+.people-para {
+	width: 695px !important;
+	margin:0px auto;
+	border-left: 2px dotted white;
+    padding-left: 10px
+}
+@media only screen and (max-width:896px) {
+	.people-para {
+		width:90% !important
+	}
+}
+
+.five-agreements-desc, .one-awesome-host-desc, .twelve-min-per-desc, .topics-desc, .people-desc, .twelve-min-cs-desc {
+	color: #fff;
+    opacity: .7;
 }
 
 .still-confused {
@@ -365,16 +427,10 @@ h1.page-title {
 	text-align: center;
 }
 
-
 .foster-dialogue-inner, .klolf-inner,
 .caho-inner, .perspectives-inner,
 .meet-inner, .tangibles-inner {
 	text-align: center;
-}
-
-.five-agreements-desc, .one-awesome-host-desc, .twelve-min-per-desc, .topics-desc, .people-desc, .twelve-min-cs-desc {
-	color: #fff;
-    opacity: .7;
 }
 
 .why-tl-desc, .why-tl-the-benefits-desc {
@@ -429,23 +485,15 @@ h1.page-title {
 .klolf-outer, .caho-img, .meet-outer, .tangibles-img {
 	margin-top: 1em
 }
-.five-agreements-div, .one-awesome-host-div, .twelve-min-per-div, .topics-div, .people-div, .twelve-min-cs-div {
-    padding: 1px 10px;
-    border-radius: 3px;
-    background-color: rgba(240, 255, 255, 0.13);
-    color: white;
-    text-align: justify;
-    font-size: 17px;
-}
 
-p.why-para, p.benefits-para, .five-agreements-para, .one-awesome-host-para, .twelve-min-per-para, .topics-desc, .people-para, .twelve-min-cs-para {
-    margin: 2% 4%;
-}
 .benefits-para {
 	color: white
 }
 .why-para {
 	color:black 
+}
+.why-para, .benefits-para {
+	margin: 2% 4%;
 }
 
 /* TL NOW PAGE */
@@ -477,6 +525,12 @@ p.why-para, p.benefits-para, .five-agreements-para, .one-awesome-host-para, .twe
 }
 
 @media only screen and (max-width: 640px) {
+	.tl-now-section-div {
+		width: 65%;
+		margin: 0px auto
+	}
+}
+@media only screen and (max-width: 399px) {
 	.tl-now-section-div {
 		width: 80%;
 		margin: 0px auto
@@ -521,44 +575,141 @@ p#tl-now-pub-desc {
 }
 
 /*CHAPTERS-INDEX STYLING*/
+
 .chapters-1-desc {
 	font-size: 5em;
 	padding-top: .2em !important;
 	padding-left: .2em !important;
 }
-.welcome-chapters-img1 {
-    width: 10%;
-    padding: 0px 4%;
-}
-.welcome-chapters-img2 {
-	width: 10%;
-    padding: 0px 3%;
-}
-.welcome-chapters-img3 {
-	width: 10%;
-    padding: 0px 4%;
-    margin-top: 30px
-}
-@media only screen and (max-width:500px) {
-	.welcome-chapters-img1 {
-    width: 14%;
-    padding: 0px 4%;
-}
-.welcome-chapters-img2 {
-	width: 13%;
-    padding: 0px 1%;
-}
-.welcome-chapters-img3 {
-		width: 14%;
-	    padding: 0px 4%;
-	    margin-top: 15px
+@media only screen and (max-width:768px) {
+	.chapters-1-desc {
+		font-size: 4em;
 	}
 }
+@media only screen and (max-width:500px) {
+	.chapters-1-desc {
+		font-size: 3.5em;
+	}
+}
+
 .wide-page-padding {
     max-width: 1500px;
 }
 .welcome-chapters {
 	text-align: center;
+}
+.welcome-chapters-r1 {
+	padding-top:30px;
+	padding-bottom:20px
+}
+.welcome-chapters-r2 img {
+	padding-right:3%;
+	padding-left:3%
+}
+
+
+.ucsd-logo{
+	width: 135px;
+	padding-left:0px !important;
+}
+.ucla-logo {
+	width:90px
+}
+.cal-logo {
+	width:95px;
+}
+.ucsb-logo {
+	width: 109px;
+	padding-left:1%
+}
+.ucsc-logo {
+	width:145px;
+	padding-right:0px !important;
+	margin-top: 30px;
+}
+@media only screen and (max-width: 960px) {
+	.welcome-chapters-r2 img {
+		padding-right:2%;
+		padding-left:2%
+	}
+	.ucsd-logo{
+		width: 110px;
+	}
+	.ucla-logo {
+		width:70px
+	}
+	.cal-logo {
+		width:71px;
+	}
+	.ucsb-logo {
+		width: 87px;
+	}
+	.ucsc-logo {
+		width:116px;
+	}
+}
+
+.upenn-logo {
+	width: 105px;
+}
+.mit-logo {
+	width: 88px;
+	padding-right:3%;
+	padding-left:3%
+}
+.harvard-logo {
+	width:130px;
+	padding:0px
+}
+@media only screen and (max-width: 960px) {
+	.upenn-logo {
+		width: 80px;
+	}
+	.mit-logo {
+		width: 65px;
+		padding-right:2%;
+		padding-left:2%
+	}
+	.harvard-logo {
+		width:108px;
+	}
+}
+
+.welcome-chapters-r3 img {
+		padding-right:3%;
+		padding-left:3%
+}
+.asu-logo {
+	width: 91px;
+	padding-left:0px !important
+}
+.texas-logo {
+	width:107px;
+}
+.tulane-logo {
+	width: 103px;
+}
+.morehouse-logo {
+	width: 83px
+}
+.georgia-logo {
+	width: 80px 
+}
+.uncw-logo {
+	width:95px;
+	margin-top: 30px;
+	padding-right: 0px !important
+}
+@media only screen and (max-width: 960px) {
+	.welcome-chapters-r3 img {
+		padding-right:2%;
+		padding-left:2%
+	}
+}
+@media only screen and (max-width: 399px) {
+	.welcome-chapters img {
+		width: 23%
+	}
 }
 
 /*INDEX 3 PAGE STYLING */
@@ -724,7 +875,7 @@ ul.cf {
 		padding: 3px;
 	}
 	#desktopNav .folder .folder-child-wrapper {
-		margin-top: -19px;
+		margin-top: -30px;
 		z-index: -1;
 		background-color: transparent !important;
 	}
@@ -768,8 +919,14 @@ ul.cf {
 }
 
 /* FOOTER STYLING */
+.footer-form {
+	margin-top: .35em;
+	margin-bottom:0px
+}
+
 div.footer-wrapper {
     padding: 30px 0px;
+    padding-bottom: .35em !important;
     #block-yui_3_17_2_2_1447237483963_8539 {
     	padding: 9px 0px 6px 0px;
     }
@@ -779,6 +936,13 @@ div.footer-wrapper {
 }
 div#block-yui_3_17_2_2_1447226074552_16924 {
     margin: 0px 13px;
+    label {
+    	color: #222222
+    }
+}
+
+.what-from-inf {
+	padding-top: 0px
 }
 
 @media only screen and (max-width: 320px) {
@@ -805,29 +969,11 @@ input.button.sqs-system-button.sqs-editable-button {
 	    font-size: 20px;
 	    width: 80%;
 	    height: 3em;
-	    background-color: rgba(67, 194, 227, 0.84);
+	    background-color: transparent;
+	    border: 2px solid white;
+	    &:hover {
+	    	opacity: .8;
+	    	color: #39bdee
+	    }
 	}
 }
-body:not(.button-style-default).button-style-solid .sqs-editable-button:hover {
-	opacity: .7;
-}
-
-/*
-.doatl-button-inner:hover {
-	    	opacity: .7 !important;
-	    	color: white;
-	    	background-color: #39bdee;
-}
-*/
-/*
-.index-main-block {
-	width: 90%;
-}
-.collection-type-index.title--description-position-over-image.title--description-alignment-center .title-desc-wrapper .title-desc-inner {
-    max-width: 1020px !important;
-}
-
-h1.home-text {
-	margin: 0px;
-}
-*/

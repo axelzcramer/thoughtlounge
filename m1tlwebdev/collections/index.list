@@ -54,6 +54,9 @@
     <div class="content{.section mainImage} has-main-image{.end}">
       {.equal? urlId "what-extra"}
       <h1 class="welcome-desc">What is a TL?</h1>
+      <p class="its-a-formatted its-a-formatted-top">
+        It's a formatted dialogue with (mostly) strangers. Here's how it works...
+      </p>
       {.end}
       {.equal? urlId "what-extra"}
         <script>
@@ -61,6 +64,8 @@
           $(".people-img").on("click", function () {
             $(".people-text-div").toggleClass('display-none');
             $(".twelve-min-per-text-div, .topics-text-div, .one-awesome-host-text-div, .five-agreements-text-div, .twelve-min-cs-text-div").addClass('display-none');
+            $(".people-img").toggleClass('underline');
+            $(".twelve-min-per-img, .topics-img, .one-awesome-host-img, .five-agreements-img, .twelve-min-cs-img").removeClass('underline');
           });
         })
         </script>
@@ -69,7 +74,9 @@
         $(document).ready(function() {
           $(".topics-img").on("click", function () {
             $(".topics-text-div").toggleClass('display-none');
-            $(".twelve-min-per-text-div, .people-text-div, .one-awesome-host-text-div, .five-agreements-text-div, .twelve-min-cs-text-div").addClass('display-none')
+            $(".twelve-min-per-text-div, .people-text-div, .one-awesome-host-text-div, .five-agreements-text-div, .twelve-min-cs-text-div").addClass('display-none');
+            $(".topics-img").toggleClass('underline');
+            $(".twelve-min-per-img, .one-awesome-host-img, .five-agreements-img, .twelve-min-cs-img, .people-img").removeClass('underline');
           });
         })
         </script>
@@ -78,7 +85,9 @@
         $(document).ready(function() {
           $(".twelve-min-per-img").on("click", function () {
             $(".twelve-min-per-text-div").toggleClass('display-none');
-            $(".topics-text-div, .people-text-div, .one-awesome-host-text-div, .five-agreements-text-div, .twelve-min-cs-text-div").addClass('display-none')
+            $(".topics-text-div, .people-text-div, .one-awesome-host-text-div, .five-agreements-text-div, .twelve-min-cs-text-div").addClass('display-none');
+            $(".twelve-min-per-img").toggleClass('underline');
+            $(".one-awesome-host-img, .five-agreements-img, .twelve-min-cs-img, .people-img, .topics-img").removeClass('underline');
           });
         })
         </script>
@@ -87,6 +96,8 @@
           $(".twelve-min-cs-img").on("click", function () {
             $(".twelve-min-cs-text-div").toggleClass('display-none');
             $(".one-awesome-host-text-div, .five-agreements-text-div, .topics-text-div, .people-text-div, .twelve-min-per-text-div").addClass('display-none');
+            $(".twelve-min-cs-img").toggleClass('underline');
+            $(".twelve-min-per-img, .one-awesome-host-img, .five-agreements-img, .people-img, .topics-img").removeClass('underline');
           });
         })
         </script>
@@ -95,7 +106,9 @@
         $(document).ready(function() {
           $(".five-agreements-img").on("click", function () {
             $(".five-agreements-text-div").toggleClass('display-none');
-            $(".one-awesome-host-text-div, .twelve-min-cs-text-div, .topics-text-div, .people-text-div, .twelve-min-per-text-div").addClass('display-none')
+            $(".one-awesome-host-text-div, .twelve-min-cs-text-div, .topics-text-div, .people-text-div, .twelve-min-per-text-div").addClass('display-none');
+            $(".five-agreements-img").toggleClass('underline');
+            $(".twelve-min-per-img, .one-awesome-host-img, .twelve-min-cs-img, .people-img, .topics-img").removeClass('underline');
           });
         })
         </script>
@@ -104,7 +117,9 @@
         $(document).ready(function() {
           $(".one-awesome-host-img").on("click", function () {
             $(".one-awesome-host-text-div").toggleClass('display-none');
-            $(".five-agreements-text-div, .twelve-min-cs-text-div, .topics-text-div, .people-text-div, .twelve-min-per-text-div").addClass('display-none')
+            $(".five-agreements-text-div, .twelve-min-cs-text-div, .topics-text-div, .people-text-div, .twelve-min-per-text-div").addClass('display-none');
+            $(".one-awesome-host-img").toggleClass('underline');
+            $(".twelve-min-per-img, .five-agreements-img, .twelve-min-cs-img, .people-img, .topics-img").removeClass('underline');
           });
         })
         </script>
@@ -123,7 +138,7 @@
       {.equal? urlId "chapters-1"}
         <h1 class="welcome-desc chapters-1-desc">CHAPTERS</h1>
       {.end}
-      <div class='content-inner{.section mainContent} has-content{.end}{.equal? urlId "what-is-a-tl"} short-page-padding{.end}{.equal? urlId "why-tl"} short-page-padding very-short-page-padding{.end}{.equal? urlId "why-tl-the-benefits"} short-page-padding very-short-page-padding{.end}{.equal? urlId "culture"} short-page-padding{.end}{.equal? urlId "what-extra"} short-page-padding{.end}{.equal? urlId "chapters-1"} short-page-padding wide-page-padding{.end} data-content-field="main-content'>
+      <div class='content-inner{.section mainContent} has-content{.end}{.equal? urlId "what-extra"} what-page-padding{.end}{.equal? urlId "why-tl"} short-page-padding very-short-page-padding{.end}{.equal? urlId "why-tl-the-benefits"} short-page-padding very-short-page-padding{.end}{.equal? urlId "culture"} short-page-padding{.end}{.equal? urlId "chapters-1"} short-page-padding wide-page-padding{.end} data-content-field="main-content'>
         <div class="title-desc-wrapper">
           <div class="title-desc-inner" data-collection-id="{id}">
             <div class="page-title-wrapper"><h1 class="page-title">{title}</h1></div>
@@ -190,7 +205,7 @@
         {.equal? urlId "why-tl-the-benefits"}
         <div class="perspectives-outer"> 
           <div class="perspectives-inner">
-            <img class="perspectives-img" src="http://i67.tinypic.com/28bb6ep.png" alt="">
+            <img class="perspectives-img" src="http://i68.tinypic.com/vh9gn5.png" alt="">
           </div>
         </div>
         <div class="perspectives-text-div benefits-text-div display-none">
@@ -208,7 +223,7 @@
         </script>
         <div class="meet-outer">
           <div class="meet-inner">
-            <img class="meet-img" src="http://i67.tinypic.com/28bb6ep.png" alt="">  
+            <img class="meet-img" src="http://i68.tinypic.com/fxcmeh.png" alt="">  
           </div>
         </div>
         <div class="meet-text-div benefits-text-div display-none">
@@ -226,7 +241,7 @@
         </script>
         <div class="tangibles-outer">
           <div class="tangibles-inner">
-            <img class="tangibles-img" src="http://i67.tinypic.com/28bb6ep.png" alt="">
+            <img class="tangibles-img" src="http://i65.tinypic.com/n5k7es.png" alt="">
           </div>
         </div>
         <div class="tangibles-text-div benefits-text-div display-none">
@@ -245,24 +260,25 @@
         {.end}
         {.equal? urlId "chapters-1"}
         <div class="welcome-chapters">
-          <div class="welcome-chapters-r1">
-            <img src="https://static1.squarespace.com/static/56395a91e4b0e877f7abcb75/t/564e6c7be4b0567eaa4eed4e/1447980155596/?format=300w" alt="" class="welcome-chapters-img1" />
-            <img src="https://static1.squarespace.com/static/56395a91e4b0e877f7abcb75/t/564e5e38e4b0e9b69e8d256b/1447976508232/?format=300w" alt="" class="welcome-chapters-img1" />
-            <img src="https://static1.squarespace.com/static/56395a91e4b0e877f7abcb75/t/564e60d2e4b0e21822e31c55/1447977171320/?format=300w" alt="" class="welcome-chapters-img1" />
+          <div class="welcome-chapters-r2">   
+            <img src="https://static1.squarespace.com/static/56395a91e4b0e877f7abcb75/t/564e6fcde4b01e432dae0ba1/1447981006410/?format=300w" alt="" class="ucsd-logo " />
+            <img src="https://static1.squarespace.com/static/56395a91e4b0e877f7abcb75/t/564e60d2e4b0e21822e31c55/1447977171320/?format=300w" alt="" class="ucla-logo " />
+            <img src="https://static1.squarespace.com/static/56395a91e4b0e877f7abcb75/t/564e5e38e4b0e9b69e8d256b/1447976508232/?format=300w" alt="" class="cal-logo " />   
+            <img src="https://static1.squarespace.com/static/56395a91e4b0e877f7abcb75/t/564e60e0e4b006a5dcea55b8/1447977185203/?format=500w" alt="" class="ucsb-logo " />
+            <img src="https://static1.squarespace.com/static/56395a91e4b0e877f7abcb75/t/564e6360e4b0bbb1d9c509ec/1447977825873/?format=300w" alt="" class="ucsc-logo " /> 
           </div>
-          <div class="welcome-chapters-r2">
-            <img src="https://static1.squarespace.com/static/56395a91e4b0e877f7abcb75/t/564e6fdee4b01e432dae0bfa/1447981023660/?format=300w" alt="" class=" welcome-chapters-img2" />
-            <img src="https://static1.squarespace.com/static/56395a91e4b0e877f7abcb75/t/564e682ce4b0b676b83da3ef/1447979053915/?format=300w" alt="" class=" welcome-chapters-img2" />
-            <img src="https://static1.squarespace.com/static/56395a91e4b0e877f7abcb75/t/564e6ca1e4b0c729bafc81b2/1447980194121/?format=300w" alt="" class=" welcome-chapters-img2" />
-            <img src="https://static1.squarespace.com/static/56395a91e4b0e877f7abcb75/t/564e6fcde4b01e432dae0ba1/1447981006410/?format=300w" alt="" class=" welcome-chapters-img2" />
-            <img src="https://static1.squarespace.com/static/56395a91e4b0e877f7abcb75/t/564e6974e4b0bbb1d9c53fea/1447979381089/?format=300w" alt="" class=" welcome-chapters-img2" />
-            <img src="https://static1.squarespace.com/static/56395a91e4b0e877f7abcb75/t/564e6360e4b0bbb1d9c509ec/1447977825873/?format=300w" alt="" class=" welcome-chapters-img2" />
+          <div class="welcome-chapters-r1">
+            <img src="https://static1.squarespace.com/static/56395a91e4b0e877f7abcb75/t/564e6ec2e4b0b0384372e724/1447980739308/?format=300w" alt="" class="upenn-logo " />
+            <img src="https://static1.squarespace.com/static/56395a91e4b0e877f7abcb75/t/564e6c7be4b0567eaa4eed4e/1447980155596/?format=300w" alt="" class="mit-logo " />
+            <img src="https://static1.squarespace.com/static/56395a91e4b0e877f7abcb75/t/564e6e3fe4b0d134bcf5655c/1447980608875/?format=300w" alt="" class="harvard-logo " />
           </div>
           <div class="welcome-chapters-r3">
-            <img src="https://static1.squarespace.com/static/56395a91e4b0e877f7abcb75/t/564e6ec2e4b0b0384372e724/1447980739308/?format=300w" alt="" class="  welcome-chapters-img3" />
-            <img src="https://static1.squarespace.com/static/56395a91e4b0e877f7abcb75/t/564e6e3fe4b0d134bcf5655c/1447980608875/?format=300w" alt="" class="  welcome-chapters-img3" />
-            <img src="https://static1.squarespace.com/static/56395a91e4b0e877f7abcb75/t/564e6c90e4b0567eaa4eedf4/1447980176885/?format=300w" alt="" class="  welcome-chapters-img3" />
-            <img src="https://static1.squarespace.com/static/56395a91e4b0e877f7abcb75/t/564e60e0e4b006a5dcea55b8/1447977185203/?format=500w" alt="" class="  welcome-chapters-img3" />
+            <img src="https://static1.squarespace.com/static/56395a91e4b0e877f7abcb75/t/564e6974e4b0bbb1d9c53fea/1447979381089/?format=300w" alt="" class="asu-logo " />
+            <img src="http://i65.tinypic.com/5djz3r.jpg" alt="" class="texas-logo " />
+            <img src="https://static1.squarespace.com/static/56395a91e4b0e877f7abcb75/t/564e682ce4b0b676b83da3ef/1447979053915/?format=300w" alt="" class="tulane-logo " />
+            <img src="https://static1.squarespace.com/static/56395a91e4b0e877f7abcb75/t/564e6fdee4b01e432dae0bfa/1447981023660/?format=300w" alt="" class="morehouse-logo " />
+            <img src="https://static1.squarespace.com/static/56395a91e4b0e877f7abcb75/t/564e6c90e4b0567eaa4eedf4/1447980176885/?format=300w" alt="" class="georgia-logo " />
+            <img src="https://static1.squarespace.com/static/56395a91e4b0e877f7abcb75/t/564e6ca1e4b0c729bafc81b2/1447980194121/?format=300w" alt="" class="uncw-logo " /> 
           </div>
         </div>
         {.end}
