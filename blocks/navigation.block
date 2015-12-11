@@ -1,0 +1,206 @@
+<!-- This is from scratch so if you want new things in your header you're going to have
+  to put them here -->
+
+  <nav class="main-nav">
+    <div class="nav-wrapper">
+      <ul class="cf">
+        <a href="/" id="yui_3_17_2_1_1447704863080_808">
+        <li class="mobile-nav-home-button"><img class="home-img" src="http://i67.tinypic.com/2d6iqb.png" alt="HOME"></li>
+        </a>
+
+        <a> <!-- pass is getyourthoughtloungehere -->
+        <li class="nav-login-button">ACCOUNT</li>
+        </a>
+
+        <a href="/password-access" target="_blank">
+        <li class="nav-doatl-button">DO.A.TL</li>
+        </a>
+
+        <a> <!-- pass is getyourthoughtloungehere -->
+        <li class="mob-nav-login-button">+ ACCOUNT</li>
+        </a>
+        <br><!--this break separates doatl and login buttons from the rest of the nav on desktop-->
+        <!--CHAPTERS-->
+        <li class="navbar-button folders-collection folder">
+              <div class="folder-parent">
+                <a aria-haspopup="true"><span>Chapters</span></a>
+                <div class="folder-child-wrapper">
+                  <ul class="folder-child">
+                        <li class="">
+                          <a href="/404-error">
+                            <span>UC Berkeley</span>
+                          </a>
+                        </li> 
+                        <li class="">
+                          <a href="/404-error">
+                            <span>UCSB</span>
+                          </a>
+                        </li> 
+                        <li class="">
+                          <a href="/404-error">
+                            <span>UCLA</span>
+                          </a>
+                        </li>
+                        <li class="">
+                          <a href="/404-error">
+                            <span>MIT/HARVARD</span>
+                          </a>
+                        </li>
+                        <li class="">
+                          <a href="/404-error">
+                            <span>COLUMBIA</span>
+                          </a>
+                        </li>         
+                        <li class="">
+                          <a href="/404-error">
+                            <span>New Chapters</span>
+                          </a>
+                        </li>
+                  </ul>
+                </div>
+              </div>           
+        </li>
+
+        <!--PUBLICATIONS-->
+        <li class="navbar-button index-collection folder">            
+            <div class="folder-parent">
+              <a aria-haspopup="true"><span>TL Now</span></a>
+              <div class="folder-child-wrapper">
+                <ul class="folder-child">
+                  <li class="">
+                      <a href="https://soundcloud.com/thoughtlounge" target="_blank">
+                        <span>Podcast</span>
+                      </a>
+                  </li>                     
+                  <li class="">
+                    <a href="https://www.instagram.com/theloungelog/" target="_blank">
+                      <span>The Lounge Log</span>
+                    </a>
+                  </li>                                             
+                  <li class="">
+                    <a href="/tl-culture">
+                      <span>Culture</span>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="/tl-news">
+                      <span>TL News</span>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="/tlam-blog">
+                      <span>TLAM! BLOG</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>            
+        </li>    
+
+        <!--BE INVOLVED-->                 
+        <li class="navbar-button folders-collection folder">
+             <!--FOLDER-->
+              <div class="folder-parent">
+                <a aria-haspopup="true"><span>Be Involved</span></a>
+                <div class="folder-child-wrapper">
+                  <ul class="folder-child">
+                    <li class="">
+                        <a href="/404-error">
+                          <span>Host A TL</span>
+                        </a>
+                      </li>                     
+                      <li class="">
+                        <a href="/404-error">
+                          <span>Start A Chapter</span>
+                        </a>
+                      </li>                                             
+                      <li class="">
+                        <a href="/404-error">
+                          <span>Run Your Chapter</span>
+                        </a>
+                      </li>
+                      <li class="">
+                        <a href="/404-error">
+                          <span>Forms/Resources</span>
+                        </a>
+                      </li>
+                      <li class="">
+                        <a href="/slack">
+                          <span>Forum (TL Slack)</span>
+                        </a>
+                      </li>
+                  </ul>
+                </div>
+              </div>           
+        </li> 
+
+        <!--BE INVOLVED-->                 
+        <li class="navbar-button folders-collection folder">
+             <!--FOLDER-->
+              <div class="folder-parent">
+                <a aria-haspopup="true"><span>INITIATIVES</span></a>
+                <div class="folder-child-wrapper">
+                  <ul class="folder-child">
+                    <li class="">
+                        <a href="/404-error">
+                          <span>BUSINESS</span>
+                        </a>
+                      </li>                     
+                      <li class="">
+                        <a href="/404-error">
+                          <span>ANGOLA IDEIAS</span>
+                        </a>
+                      </li>
+                      <li class="">
+                        <a href="/404-error">
+                          <span>TL Against Poverty</span>
+                        </a>
+                      </li>                                              
+                  </ul>
+                </div>
+              </div>           
+        </li>
+
+        <!-- ABOUT -->        
+        <li class="navbar-button index3-collection folder">
+          <div class="folder-parent">
+              <a aria-haspopup="true"><span>About</span></a>
+              <div class="folder-child-wrapper">
+                <ul class="folder-child">
+                      <li class="">
+                        <a href="/a-brief-note">
+                          <span>A brief note</span>
+                        </a>
+                      </li>                     
+                      <li class="">
+                        <a href="/nonprofit">
+                          <span>The Nonprofit</span>
+                        </a>
+                      </li> 
+                      <li class="">
+                        <a href="/faq">
+                          <span>FAQS</span>
+                        </a>
+                      </li>                    
+                      <li class="">
+                        <a href="/merch">
+                          <span>Buy Merch</span>
+                        </a>
+                      </li>
+                      <li class="">
+                        <a href="/donate">
+                          <span>Donate</span>
+                        </a>
+                      </li> 
+                      <li class="">
+                        <a href="/get-in-touch">
+                          <span>Contact</span>
+                        </a>
+                      </li>
+               </ul>
+              </div>
+            </div>           
+        </li>       
+      </ul>  
+    </div>
+  </nav>

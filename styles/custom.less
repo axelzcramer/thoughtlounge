@@ -4,11 +4,19 @@ CHA BRAH. MY. CUSTOM .LESS
 */
 
 /*GENERAL AND OTHER STYLING */
+.title-desc-wrapper.no-main-image {
+    display: none;
+}
+
+
 .no-margin-top {
 	margin-top: 0px !important
 }
 .grey {
 	color: #9C9C9C !important
+}
+.login-grey {
+	color: #3c3c3c !important;
 }
 .transparent {
 	background-color: transparent !important;
@@ -32,6 +40,15 @@ CHA BRAH. MY. CUSTOM .LESS
 
 .small-header {
 	height: 13em !important;
+}
+
+.spacer-div {
+	color: transparent;
+}
+@media only screen and (min-width: 769px) {
+	.spacer-div {
+		display: none;
+	}
 }
 
 /* WELCOME INDEX STYLING*/
@@ -231,8 +248,7 @@ div#block-yui_3_17_2_2_1447887414544_26400 {
 	margin-bottom: 0px;
 	color:white;
 	font-size: 1.5em;
-	display: inline-block;
-	margin-left:20px
+	margin-left: 41px
 }
 @media only screen and (max-width:1174px) {
 	.its-a-formatted {
@@ -266,6 +282,7 @@ div#block-yui_3_17_2_2_1447887414544_26400 {
 
 .five-agreements-img, .one-awesome-host-img, .twelve-min-cs-img, .twelve-min-per-img, .topics-img, .people-img {
 	opacity: .8;
+	color: white;
 	&:hover {
 		opacity: 1;
 		cursor: pointer;
@@ -381,7 +398,6 @@ div#block-yui_3_17_2_2_1447887414544_26400 {
 .people-para {
 	width: 695px !important;
 	margin:0px auto;
-	border-left: 2px dotted white;
     padding-left: 10px
 }
 @media only screen and (max-width:896px) {
@@ -402,6 +418,10 @@ div#block-yui_3_17_2_2_1447887414544_26400 {
 
 
 /* WHY TL OUR VALUES & THE BENEFITS PAGE STYLING */	
+.benefits-para a {
+	color: #39BDee;
+	text-decoration: underline;
+}
 .why-tl-link {
 	font-weight: 600;
 	color: black;
@@ -465,7 +485,7 @@ div#block-yui_3_17_2_2_1447887414544_26400 {
 }
 
 .why-tl-text-div, {
-	background-color: rgba(255, 255, 255, .4);
+	background-color: rgba(255, 255, 255, .6);
 	padding: 1px 10px;
     border-radius: 20px;
     text-align: left;
@@ -549,6 +569,7 @@ div#block-yui_3_17_2_2_1447887414544_26400 {
     margin-left: 2.5%;
     margin-top: .2em;
     margin-bottom: 0em;
+    color: white
 }
 p#tl-now-pub-desc {
     margin: 0px;
@@ -574,7 +595,7 @@ p#tl-now-pub-desc {
 	color: white !important
 }
 
-/*CHAPTERS-INDEX STYLING*/
+/*CHAPTERS-WELCOME STYLING*/
 
 .chapters-1-desc {
 	font-size: 5em;
@@ -661,6 +682,11 @@ p#tl-now-pub-desc {
 	width:130px;
 	padding:0px
 }
+.columbia-logo {
+    width: 202px;
+    margin-right: 0em;
+    margin-left: 1em;
+}
 @media only screen and (max-width: 960px) {
 	.upenn-logo {
 		width: 80px;
@@ -672,6 +698,12 @@ p#tl-now-pub-desc {
 	}
 	.harvard-logo {
 		width:108px;
+	}
+}
+@media only screen and (max-width: 532px) {
+	.columbia-logo {
+		margin-top: 17px;
+    	margin-bottom: -23px;
 	}
 }
 
@@ -711,6 +743,25 @@ p#tl-now-pub-desc {
 		width: 23%
 	}
 }
+
+/*ABOUT STYLING*/
+@media only screen and (max-width: 768px) {
+	h1.page-title.page-title-a-brief-note, 
+	h1.page-title.page-title-nonprofit,
+	h1.page-title.page-title-tl-news {
+		margin-top:2em;
+		margin-bottom:1.5em
+	}	
+}
+.np-heading {
+	margin-top:0px
+}
+
+/*BLOG2 STYLING*/
+.entry-content {
+	line-height: 2em
+}
+
 
 /*INDEX 3 PAGE STYLING */
 .collection-type-index3 {
@@ -775,7 +826,26 @@ p#tl-now-pub-desc {
 	.navbar-button span {
 	    color: white;
 	}
+	.login-nav, .nav-login-button {
+		display: none !important;
+	}
 }
+@media only screen and (min-width: 769px) {
+	.mob-nav-login-button {
+		display: none !important; 
+	}
+}
+.mob-nav-login-button {
+	font-size: 2em;
+    padding: 28px 0px;
+    color: #39bdee !important;
+    border-bottom: none !important;
+    cursor: pointer;
+    &:hover {
+    	opacity: .5 !important;
+    }
+}
+
 
 img.home-img {
     width: 2.3em;
@@ -786,7 +856,7 @@ img.home-img {
 }
 
 li.mobile-nav-home-button {
-    border-bottom: white;
+    border-bottom: none !important;
 }
 
 .title-nav-wrapper {
@@ -801,16 +871,43 @@ ul.folder-child li {
 	background-color: #fff !important;
 }
 
+.login-nav {
+    position: absolute;
+    z-index: 10000;
+    list-style-type: none;
+    right: 9.2em;
+    top: 2.8em;
+    background-color: rgba(0,0,0,0.78);
+    border-radius: 1px;
+    color: #ccc !important;
+}
+
+ul.login-ul {
+    padding-left: 0px;
+    margin: 0px;
+}
+
+li.tl-login-button {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.49);
+    color: #ccc;
+    list-style-type: none;
+    padding: 5px 1em;
+    text-align: center;
+    font-size: 15px;
+    &:hover {
+    	color: #39bdee;
+    }
+}
+
+li.tl-login-button.logout-btn {
+    border-bottom: none;
+}
+
 /*Navbar button hover fonts. navigation*/
 ul.cf {
-	li.navbar-button:nth-child(4n+0) span {
-		    &:hover {
-		    color: #f06aa7;
-		}
-	}
 	li.navbar-button:nth-child(4n+1) span {
 		    &:hover {
-		    color: #39eec5;
+		    color: #f06aa7;
 		}
 	}
 	li.navbar-button:nth-child(4n+2) span {
@@ -820,7 +917,12 @@ ul.cf {
 	}
 	li.navbar-button:nth-child(4n+3) span {
 		    &:hover {
-		    color: #00b7e2;
+		    color: #39EEC5;
+		}
+	}
+	li.navbar-button:nth-child(4n+0) span {
+		    &:hover {
+		    color: #39BDEE;
 		}
 	}
 }
@@ -849,16 +951,17 @@ ul.cf {
 	    font-style: normal;
 	    color: #39bdee;
     	margin-right: 30px !important;
+    	cursor: pointer;
     	&:hover {
-    		color: #8A8A84;
+    		color: #3c3c3c;
     	}
 	}
 	.nav-doatl-button {
-		border: 2px solid #39BDEE;
+		border: 2px solid #39eec5;
 	    border-radius: 3px;
 	    padding: 10px 7px 8px;
 	    margin: 4px -10px !important;
-	    color: #39BDEE;	
+	    color: #39eec5;	
 	    font-family: "proxima-nova";
 	    font-size: 15px;
 	    text-transform: uppercase;
@@ -866,6 +969,10 @@ ul.cf {
 	    letter-spacing: .1em;
 	    font-weight: 400;
 	    font-style: normal;
+	    &:hover {
+	    	background-color: #39eec5;
+	    	color: white;
+	    }
 	}
 	.folder .folder-child-wrapper ul.folder-child li {
 	    background-color: black;
@@ -891,8 +998,9 @@ ul.cf {
 		background-color: #2E2B2B;
 	}
 	li.nav-doatl-button {
+		font-size: 2em;
 	    padding: 28px 0px;
-	    color: #39bdee !important;
+	    color: #39eec5 !important;
 	    border-top: 1px solid white !important;
 	    border-bottom: 1px solid white !important;
 	    &:hover {
@@ -900,8 +1008,9 @@ ul.cf {
 	    }
 	}
 	li.nav-login-button {
+		font-size: 2em;
 	    padding: 28px 0px;
-	    color: #39eec5 !important;
+	    color: #39bdee !important;
 	    border-bottom: none !important;
 	    &:hover {
 	    	opacity: .5 !important;
@@ -917,6 +1026,57 @@ ul.cf {
 		position: fixed !important;
 	}
 }
+
+/* CHAPTERS PAGES 
+-----------------------------*/
+.ch-manifesto-div {
+	background-color:rgba(0, 0, 0, 0.08);
+	border-radius:10px
+}
+.ch-manifesto-heading {
+	text-align:center;
+	margin-top:0px
+}
+
+.mob-cal-btn {
+    text-align: center;
+    padding: 1em;
+    width: 10em;
+    border-radius: 5px;
+    border: 2px solid #39eec5;
+    margin: 0px auto;
+    &:hover {
+    	background-color: #39eec5;
+    	color:white;
+    }
+}
+.mob-cal-btn-link {
+	text-decoration: none !important
+}
+@media only screen and (min-width: 400px) {
+	.mob-cal-btn {
+		display: none
+	}
+	.ch-manifesto-heading {
+		font-size: 2em;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.ch-calendar {
+		display: none
+	}
+}
+.ch-fb-img-div {
+	text-align: center; 
+}
+.ch-fb-img {
+	width: 5 em;
+	cursor: pointer;
+	&:hover {
+		background-color:#39bdee;
+	}
+}
+
 
 /* FOOTER STYLING */
 .footer-form {

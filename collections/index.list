@@ -38,7 +38,7 @@
         <div class="page-title-wrapper">
           <h1 class="page-title" data-content-field="title">{title}</h1>
           <div class="doatl-button-outer">
-            <a href="http://thoughtlounge.org" target="_blank">
+            <a href="http://doatl.thoughtlounge.org/doatl" target="_blank">
               <div class="doatl-button-inner">
                 LET'S GET THINKING
               </div>
@@ -209,9 +209,9 @@
           </div>
         </div>
         <div class="perspectives-text-div benefits-text-div display-none">
-          <p class="benefits-para-first benefits-para">TO TEST DIFF to each person as if they are the most important person in the world.</p>
-          <p class="benefits-para-second benefits-para">We believe in creating social contexts in which people arrive with the intention to share what is on the frontier of their minds and closest to their hearts.</p>
-          <p class="benefits-para-third benefits-para">We believe in the creation of <a class="perspectives-link" href="http://thoughtlounge.org" target="_blank"><u>true dialogue.</u></a></p>
+          <p class="benefits-para-first benefits-para">TL Sessions inspire innovation and creativity by pushing Loungers to connect seemingly unrelated topics.</p>
+          <p class="benefits-para-second benefits-para">TL Sessions cultivate intellectual well-roundedness by exposing Loungers to five disparate topics presented by passionate people from diverse backgrounds. </p>
+          <p class="benefits-para-third benefits-para">There are roughly five million terabytes of information on the Internet, but figuring out what among that info is interesting and important still far eludes computers. TL Sessions bring people together to do just that.</p>
         </div>
         <script>
         $(document).ready(function() {
@@ -227,9 +227,9 @@
           </div>
         </div>
         <div class="meet-text-div benefits-text-div display-none">
-          <p class="benefits-para-first benefits-para">We believe in listening to each person as if they are the most important person in the world.</p>
-          <p class="benefits-para-second benefits-para">We believe in creating social contexts in which people arrive with the intention to share what is on the frontier of their minds and closest to their hearts.</p>
-          <p class="benefits-para-third benefits-para">We believe in the creation of <a class="foster-dialogue-link" href="http://thoughtlounge.org" target="_blank"><u>true dialogue.</u></a></p>
+          <p class="benefits-para-first benefits-para">TL Sessions are like ultimate cocktail parties, utilizing random encounters to expose you to more opportunities to have <a href="/tl-definitions/#ah-hah-def">“Ah Hah!” moments</a> and meet the people who inspire those moments. cf. <a href="bad-networking-def">bad networking</a> </p>
+          <p class="benefits-para-second benefits-para">TL Chapters are tightly-knit communities that you can be involved with at the level you want, whether it’s for a weekly lunch, a <a href="/tl-definitions#music-lounge-def">Music Lounge</a>, as a leader, or not at all.</p>
+          <p class="benefits-para-third benefits-para">TL Sessions help build deep relationships that can help ease life transitions from high school to college, college to the workplace, or the workplace to retirement.</p>
         </div>
         <script>
         $(document).ready(function() {
@@ -245,9 +245,9 @@
           </div>
         </div>
         <div class="tangibles-text-div benefits-text-div display-none">
-          <p class="tangibles-para-first benefits-para">We believe in listening to each person as if they are the most important person in the world.</p>
-          <p class="benefits-para-second benefits-para">We believe in creating social contexts in which people arrive with the intention to share what is on the frontier of their minds and closest to their hearts.</p>
-          <p class="benefits-para-third benefits-para">We believe in the creation of <a class="foster-dialogue-link" href="http://thoughtlounge.org" target="_blank"><u>true dialogue.</u></a></p>
+          <p class="tangibles-para-first benefits-para">TL Sessions develop public speaking, moderation and social skills.</p>
+          <p class="benefits-para-second benefits-para">TL Sessions are a practice in learning how to communicate complex challenges with a diverse group, which is half the challenge in learning to exercise leadership.</p>
+          <p class="benefits-para-third benefits-para">TL Sessions better one’s ability to manage ambiguity, a skill that every leader must learn, that applies to every <a href="/tl-definitions#challenge-def">adaptive challenge</a>, and is among the <a href="https://targetjobs.co.uk/careers-advice/skills-and-competencies/324419-managing-ambiguity-the-essential-skill-for-career-progression" target="_blank">most highly valued in the workforce</a>.</p>
         </div>
         <script>
         $(document).ready(function() {
@@ -271,6 +271,7 @@
             <img src="https://static1.squarespace.com/static/56395a91e4b0e877f7abcb75/t/564e6ec2e4b0b0384372e724/1447980739308/?format=300w" alt="" class="upenn-logo " />
             <img src="https://static1.squarespace.com/static/56395a91e4b0e877f7abcb75/t/564e6c7be4b0567eaa4eed4e/1447980155596/?format=300w" alt="" class="mit-logo " />
             <img src="https://static1.squarespace.com/static/56395a91e4b0e877f7abcb75/t/564e6e3fe4b0d134bcf5655c/1447980608875/?format=300w" alt="" class="harvard-logo " />
+            <img src="http://i66.tinypic.com/s3jwvp.jpg" alt="" class="columbia-logo">
           </div>
           <div class="welcome-chapters-r3">
             <img src="https://static1.squarespace.com/static/56395a91e4b0e877f7abcb75/t/564e6974e4b0bbb1d9c53fea/1447979381089/?format=300w" alt="" class="asu-logo " />

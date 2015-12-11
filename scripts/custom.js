@@ -17,7 +17,16 @@ $(window).scroll(function() {
     } else {
       $('h1.site-title').fadeIn();
     }; 
- });
+});
+
+$(document).ready(function () {
+  $('.nav-login-button').click( function () {
+    console.log('yep, that worked like a charm');
+    $('.login-nav').toggleClass('display-none');
+    $('.nav-login-button').toggleClass('login-grey');
+
+  });
+});
 
 /*
 var myUrl = window.location.pathname; 
@@ -32,23 +41,7 @@ $(document).ready(function(){
 
 
 /*NAV HOVER COLORS USING JQUERY (REST WITH CSS IN CUSTOM.LESS)*/
-   
-$(document).ready(function() {
-  $('.nav-doatl-button').hover(function() {
-    $(this).addClass('bgblue colorwhite');
-    }, function () {
-    $(this).removeClass('bgblue colorwhite');
-    }
-  );
-  /*
-  $('.nav-login-button').hover(function() {
-    $(this).addClass('colorblue');
-    }, function () {
-    $(this).removeClass('colorblue');
-    }
-  );
-  */
-});
+
 
 /* LOAD VIDEO TO BANNER IMAGE SCRIPT
 replace "url" below with new url of an mp4 link you've uploaded to ss, making
